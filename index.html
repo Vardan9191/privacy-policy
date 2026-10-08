@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Build Manage (SmartBarrier)</title>
+    <style>
+        :root {
+            --bg-color: #0A0F1D;
+            --card-bg: #131B2E;
+            --text-main: #F8FAFC;
+            --text-muted: #94A3B8;
+            --accent: #0EA5E9;
+            --border: #1E293B;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 24px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 32px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        h1 {
+            color: #38BDF8;
+            font-size: 28px;
+            margin-top: 0;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 12px;
+        }
+        h2 {
+            color: var(--accent);
+            font-size: 20px;
+            margin-top: 24px;
+        }
+        p, li {
+            color: var(--text-muted);
+            font-size: 15px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: var(--text-main);
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            font-size: 13px;
+            color: #64748B;
+            text-align: center;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(14, 165, 233, 0.15);
+            color: #38BDF8;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="badge">Build Manage / SmartBarrier</span>
+        <h1>Privacy Policy</h1>
+        <p><strong>Effective Date:</strong> October 9, 2026</p>
+        <p>This Privacy Policy describes how <strong>Build Manage</strong> ("we", "us", or "our"), developed by Vardan Teloyan, collects, uses, and discloses information when you use our mobile application (Package: <code>com.varda.smartbarrier</code>) and related hardware services.</p>
+
+        <h2>1. Information We Collect</h2>
+        <p>We collect only the minimum information necessary to provide smart access and barrier management services:</p>
+        <ul>
+            <li><strong>Phone Number:</strong> Used solely for identity verification, multi-factor authentication (OTP via SMS/Flash Call), and assigning authorized barrier/yard access permissions.</li>
+            <li><strong>Device & Network Identifiers:</strong> Basic hardware telemetry (ESP32 device serial number, Wi-Fi signal RSSI, IP address, and firmware version) to diagnose barrier connectivity and reliability.</li>
+            <li><strong>Access & Command Logs:</strong> Timestamps of barrier open and close events for security auditing, dispute resolution, and technician diagnostics.</li>
+        </ul>
+
+        <h2>2. Device Permissions Used by the App</h2>
+        <ul>
+            <li><strong>Camera (<code>android.permission.CAMERA</code>):</strong> Used exclusively to scan QR codes on barrier controller hardware or technician invite cards for rapid setup. We never record or transmit video or photos.</li>
+            <li><strong>Location (<code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code>):</strong> Required by the Android operating system to perform Bluetooth Low Energy (BLE) scanning, and used for an optional proximity check (Geofence Guard) to prevent unintended barrier commands when you are far away. Location data is processed locally on your device and is never tracked continuously or sold.</li>
+            <li><strong>Bluetooth (<code>BLUETOOTH_SCAN</code>, <code>BLUETOOTH_CONNECT</code>):</strong> Used for direct offline communication with barrier controllers when cellular or Wi-Fi connectivity is unavailable.</li>
+            <li><strong>Vibration (<code>VIBRATE</code>):</strong> Provides tactile feedback when a gate command succeeds or fails.</li>
+        </ul>
+
+        <h2>3. How We Use and Share Information</h2>
+        <ul>
+            <li>We use your data solely to operate the barrier automation system, authenticate users, and diagnose hardware issues.</li>
+            <li><strong>We do not sell, rent, or monetize your personal data.</strong></li>
+            <li>Data is never shared with third-party advertising or analytics networks.</li>
+            <li>Information is transmitted securely using industry-standard TLS encryption.</li>
+        </ul>
+
+        <h2>4. Data Retention and Deletion</h2>
+        <p>We retain account records for as long as you are an active authorized resident or technician. You may request the complete deletion of your phone number and associated yard permissions at any time by contacting your system administrator or emailing us.</p>
+
+        <h2>5. Children's Privacy</h2>
+        <p>Our application is not directed to children under 13, and we do not knowingly collect personal information from children.</p>
+
+        <h2>6. Security</h2>
+        <p>We employ administrative, physical, and electronic measures designed to protect your information from unauthorized access, including authenticated database security rules, encrypted MQTT communication, and tokenized session authentication.</p>
+
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions or requests regarding this Privacy Policy, please contact us at:</p>
+        <p><strong>Developer:</strong> Vardan Teloyan<br>
+        <strong>Email:</strong> <a href="mailto:Vardan9191@hotmail.com" style="color: #38BDF8;">Vardan9191@hotmail.com</a><br>
+        <strong>Application:</strong> Build Manage / SmartBarrier</p>
+
+        <div class="footer">
+            &copy; 2026 Build Manage. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
